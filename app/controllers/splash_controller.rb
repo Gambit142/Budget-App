@@ -1,4 +1,4 @@
-class SplashesController < ApplicationController
+class SplashController < ApplicationController
   def index
   end
 end
