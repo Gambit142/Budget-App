@@ -21,9 +21,16 @@ ActiveRecord::Schema.define(version: 2022_02_06_181525) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "record_id", null: false
-    t.index ["record_id"], name: "index_categories_on_record_id"
     t.index ["user_id"], name: "index_categories_on_user_id"
+  end
+
+  create_table "categories_records", force: :cascade do |t|
+    t.bigint "category_id", null: false
+    t.bigint "records_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["category_id"], name: "index_categories_records_on_category_id"
+    t.index ["records_id"], name: "index_categories_records_on_records_id"
   end
 
   create_table "records", force: :cascade do |t|
@@ -32,8 +39,6 @@ ActiveRecord::Schema.define(version: 2022_02_06_181525) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "category_id", null: false
-    t.index ["category_id"], name: "index_records_on_category_id"
     t.index ["user_id"], name: "index_records_on_user_id"
   end
 
@@ -50,8 +55,8 @@ ActiveRecord::Schema.define(version: 2022_02_06_181525) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "categories", "records"
   add_foreign_key "categories", "users"
-  add_foreign_key "records", "categories"
+  add_foreign_key "categories_records", "categories"
+  add_foreign_key "categories_records", "records", column: "records_id"
   add_foreign_key "records", "users"
 end
