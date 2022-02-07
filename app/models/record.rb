@@ -1,4 +1,5 @@
 class Record < ApplicationRecord
   belongs_to :user
-  belongs_to :categories
+  has_many :categories_records
+  has_many :categories, through: :categories_records
 end
