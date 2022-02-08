@@ -5,4 +5,5 @@ class Category < ApplicationRecord
 
   validates :name, presence: true, length: { maximum: 100 }
   validates :icon, presence: true, length: { maximum: 250 }
+  before_save { name.downcase! }
 end

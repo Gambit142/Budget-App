@@ -8,7 +8,7 @@
 
 bernard = User.create!(name: 'Bernard', email: 'bernard@gmail.com', password: '123456' )
 
-sports = bernard.categories.create!(name: 'Entertainment', icon: 'football')
+sports = bernard.categories.create!(name: 'entertainment', icon: 'football')
 record = bernard.records.create!(name: 'FifaPro', amount: 50.25)
 
-CategoryRecord.create!(category: sports, record: record)
+CategoriesRecord.create!(category: sports, record: record)
