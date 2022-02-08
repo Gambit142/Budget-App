@@ -11,13 +11,12 @@ class CategoriesController < ApplicationController
   def new; end
 
   def create
-    category_name = category_params['name'].downcase!
+    category_name = category_params['name'].downcase
     category = current_user.categories.new(name: category_name, icon: category_params['icon'])
     if Category.where(name: category_name).exists?
       redirect_to new_category_url, notice: "This category name already exists"
       return
     else
-      # new_category = current_user.categories.new(name: category_name, icon: category_params['icon'])
       if category.save
         flash[:success] = 'You successfully added a category to your application'
         redirect_to categories_url
