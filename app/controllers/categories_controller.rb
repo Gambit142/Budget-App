@@ -6,9 +6,6 @@ class CategoriesController < ApplicationController
     @categories = current_user.categories.includes(:records)
   end
 
-  def show
-  end
-
   def new; end
 
   def create
