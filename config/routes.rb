@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "splash#index"
 
+  get '/records/new', to: 'records#new', as: 'new_record'
+  post '/records', to: 'records#create', as: 'create_record'
+  
   resources :categories, only: [:index, :show, :new, :create] do
-    resources :records, only: [:index, :show, :new, :create]
+    resources :records, only: [:index, :show]
   end
 end
