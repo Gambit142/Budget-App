@@ -14,7 +14,10 @@
 
       <div>
         <%= form.label :categories, 'Choose category/categories for this transaction' %><br>
-        <%= form.collection_check_boxes :category_ids, Category.all, :id, :name, :required => true %>
+        <%= form.collection_check_boxes :category_ids, Category.all, :id, :name do |c| %>
+          <%= c.check_box %>
+          <%= c.label %><br>
+        <% end %>
       </div>
       <%= form.submit 'Create Transaction' %>
     <% end %>
