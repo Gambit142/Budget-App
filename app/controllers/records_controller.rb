@@ -3,9 +3,7 @@ class RecordsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-  end
-
-  def show
+    @category = current_user.categories.includes(:records).find(params[:category_id])
   end
 
   def new; end
