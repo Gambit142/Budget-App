@@ -3,9 +3,9 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  # def configure_permitted_parameters
-  #   devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
-  # end
+  def after_sign_in_path_for(resource)
+    stored_location_for(resource) || categories_path
+  end
 
   def update_allowed_parameters
     devise_parameter_sanitizer.permit(:sign_up) do |u|
