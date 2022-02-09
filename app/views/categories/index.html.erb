@@ -1,2 +1,23 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+<main>
+  <% @categories.each do |category| %>
+    <%= link_to category_records_path(category) do %>
+      <article>
+        <div class="icon-placeholder">
+          <%= image_tag(category.icon) %>
+        </div>
+        <div class="details-div">
+          <div>
+            <span><%= category.name %></span>
+            <span>
+              <%= category.records.reduce(0) { |sum, item| sum + item.amount } %>
+            </span>
+          </div>
+          <div><%= category.created_at.strftime('%d %b %Y') %></div>
+        </div>
+      </article>
+    <% end %>
+  <% end %>
+  <div>
+    <%= button_to 'Add New Category', new_category_url, method: :get %>
+  </div>
+</main>
