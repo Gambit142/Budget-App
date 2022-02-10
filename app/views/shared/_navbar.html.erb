@@ -1,6 +1,8 @@
 <nav class="nav-bar-container d-flex">
   <div>
-    <i class="fa-solid fa-circle-left"></i>
+    <%= link_to path, class: 'back-link' do %>
+      <i class="fa-solid fa-circle-left"></i>
+    <% end %>
   </div>
   <div> <%= variable %> </div>
   <div>

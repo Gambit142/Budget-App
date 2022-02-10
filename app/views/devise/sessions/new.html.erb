@@ -1,27 +1,18 @@
 <div>
-  <%= render partial: "shared/navbar", locals: {variable: 'LOGIN' } %>
+  <%= render partial: "shared/navbar", locals: {variable: 'LOGIN', path: root_path } %>
 </div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div>
+    <%= f.email_field :email, autofocus: true, placeholder: :email, class: 'form-field', autocomplete: "email" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+  <div>
+    <%= f.password_field :password, placeholder: :password, class: 'form-field', autocomplete: "current-password" %>
   </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", class: 'devise-btn' %>
   </div>
 <% end %>
 
