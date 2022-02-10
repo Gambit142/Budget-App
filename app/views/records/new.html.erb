@@ -17,7 +17,7 @@
 
       <div>
         <%= form.label :categories, 'Choose category/categories for this transaction' %><br>
-        <%= form.collection_check_boxes :category_ids, Category.all, :id, :name do |c| %>
+        <%= form.collection_check_boxes :category_ids, Category.all, :id, :name, class: 'collection' do |c| %>
           <%= c.check_box %>
           <%= c.label %><br>
         <% end %>

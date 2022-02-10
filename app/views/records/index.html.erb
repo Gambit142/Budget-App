@@ -12,7 +12,7 @@
   </div>
   <div class="payment-div">
     <p>Total Payment:</p>
-    <p> <%= @category.records.reduce(0) { |sum, item| sum + item.amount }%> </p>
+    <p>$<%= @category.records.reduce(0) { |sum, item| sum + item.amount }%> </p>
   </div>
   <div>
     <% @category.most_recent.each do |record| %>

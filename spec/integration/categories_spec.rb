@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Foods Index Page Features', type: :feature do
+RSpec.describe 'Categories Index Page Features', type: :feature do
   before(:each) do
     visit user_session_path
     @vladmir = User.create!(
@@ -39,7 +39,7 @@ RSpec.describe 'Foods Index Page Features', type: :feature do
       expect(page).to have_content 'Register Your Category'
     end
 
-    it 'completes the creation of new category' do
+    it 'completes the creation of a new category' do
       click_button('Add New Category')
       fill_in "Name", with: 'Sports'
       find(:css, '#add_category_icon').set(File.join(Rails.root + 'spec', 'fixtures', 'multi-colored.png'))
