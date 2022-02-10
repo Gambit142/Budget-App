@@ -1,10 +1,12 @@
-<nav>
+<nav class="nav-bar-container d-flex">
   <div>
-    <i class="fas fa-arrow-left"></i>
+    <i class="fa-solid fa-circle-left"></i>
   </div>
   <div> <%= variable %> </div>
   <div>
-    <i class="fas fa-user"></i>
+    <%= button_to destroy_user_session_path, method: :delete do %>
+      <i class="fas fa-right-from-bracket"></i>
+    <% end %>
   </div>
 </nav>
 <div>

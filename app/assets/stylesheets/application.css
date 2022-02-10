@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: rgb(235, 238, 238);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.nav-bar-container {
+  font-family: 'Italiana', serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #3778c2;
+  color: #fff;
+}
