@@ -18,5 +18,20 @@
       <% end -%>
     </div>
     <%= yield %>
+    <script>
+      const FILEUPLOADER = document.querySelector('#add_category_icon');
+      FILEUPLOADER.addEventListener("change", (e) => {
+        document.querySelector('.file-upload-label > span').innerText = e.target.files[0].name;
+        document.querySelector('.file-upload-label > p').style.backgroundColor = "green";
+        document.querySelector('.file-upload-label > p').innerText = "Selected ✓"
+      })
+
+      document.querySelector('.reg-cat').addEventListener('click', () => {
+        if ((document.querySelector('.file-upload-label > span').innerText == 'No File Chosen') && 
+        (document.querySelector('#add_category_name').value !== '')) {
+          alert('select an icon for this category!')
+        }
+      })
+    </script>
   </body>
 </html>
