@@ -30,3 +30,10 @@ body {
   background-color: #3778c2;
   color: #fff;
 }
+
+.sign-out-btn {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.1rem;
+}
