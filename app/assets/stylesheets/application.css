@@ -21,6 +21,10 @@ body {
   display: flex;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .nav-bar-container {
   font-family: 'Italiana', serif;
   font-size: 1.2rem;
@@ -69,7 +73,6 @@ body {
 }
 
 .forgot-password-div {
-  justify-content: center;
   margin-top: 0.5rem;
 }
 
@@ -77,4 +80,12 @@ body {
   text-decoration: none;
   color: #3778c2;
   font-size: 1.2rem;
+}
+
+.password-character {
+  color: #3778c2;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 0.4rem;
+  margin-left: 0.4rem;
 }
