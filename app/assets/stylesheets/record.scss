@@ -4,6 +4,7 @@ $roboto: 'Roboto', sans-serif;
 $blue: #3778c2;
 $bold: bold;
 $grey: #434b54;
+$shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
 
 .new-record-container {
   color: $grey;
@@ -22,6 +23,10 @@ $grey: #434b54;
       font-size: 1.2rem;
       line-height: 1.1rem;
       font-weight: $bold;
+    }
+
+    .checkbox-div:first-of-type {
+      margin-top: 0.7rem;
     }
 
     .checkbox-div {
@@ -79,6 +84,52 @@ $grey: #434b54;
   }
 }
 
-.checkbox-div:first-child {
-  margin-top: 0.5rem;
+.records-container {
+  margin: 0.7rem;
+  color: $grey;
+  font-family: $roboto;
+  padding-bottom: 8rem;
+
+  .upper-level {
+    box-shadow: $shadow;
+    padding: 0.4rem;
+
+    .record-img-div {
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.4rem;
+    }
+  
+    .payment-div {
+      margin-top: 0.7rem;
+      font-size: 2rem;
+      font-family: $italianno;
+      border-top: 2px solid $grey;
+      border-bottom: 2px solid $grey;
+    }
+  }
+
+  .transaction-general-div {
+    padding: 0.4rem;
+    margin-top: 1rem;
+
+    .id-number {
+      margin-top: 0.6rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    
+    .transaction-info {
+      font-family: $italianno;
+      font-size: 1.5rem;
+      font-weight: $bold;
+    }
+    
+    .date {
+      font-size: 0.8rem;
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid $grey;
+    }
+  }
 }
