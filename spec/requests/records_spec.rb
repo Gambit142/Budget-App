@@ -5,7 +5,7 @@ RSpec.describe Record, type: :request do
     user = User.create!(name: 'Al', email: 'al@example.com', password: 'password')
     @category = user.categories.new(name: 'Games')
     @category.icon.attach(
-      io: File.open(Rails.root.join('spec', 'fixtures', 'multi-colored.png')), 
+      io: File.open(Rails.root.join('spec', 'fixtures', 'multi-colored.png')),
       filename: 'multi-colored.png',
       content_type: 'application/xlsx'
     )

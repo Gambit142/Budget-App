@@ -15,7 +15,8 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
   right: 0;
   left: 0;
 
-  button, input {
+  button,
+  input {
     border: 1px solid white;
     background: transparent;
     width: 20rem;
@@ -43,7 +44,7 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
 .category-container {
   color: $grey;
   padding-bottom: 10rem;
-  
+
   .user-div {
     background-color: #fff;
     margin-bottom: 1rem;
@@ -56,7 +57,7 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
       text-align: center;
       font-weight: $bold;
     }
-  
+
     div.gift-div {
       padding: 0.2rem 0.5rem;
       justify-content: space-between;
@@ -76,11 +77,11 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
       width: 65%;
       padding-top: 1.2rem;
       padding-right: 0.5rem;
-      
+
       .dollar-amount {
         font-weight: $bold;
       }
-      
+
       .date {
         font-size: 1.3rem;
         font-family: Italianno, serif;
@@ -99,7 +100,6 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
 
 .new-category-container {
   color: $grey;
-
 
   .upload-icon {
     text-align: center;

@@ -14,7 +14,7 @@
  *= require_self
  */
 
- * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -78,7 +78,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  border: none
+  border: none;
 }
 
 .devise-btn:hover {

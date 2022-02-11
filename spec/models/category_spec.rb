@@ -5,7 +5,7 @@ describe Category, type: :model do
     @user = User.create!(name: 'Leroy', email: 'leroy@gmail.com', password: '123456')
     @category = @user.categories.new(name: 'Games')
     @category.icon.attach(
-      io: File.open(Rails.root.join('spec', 'fixtures', 'multi-colored.png')), 
+      io: File.open(Rails.root.join('spec', 'fixtures', 'multi-colored.png')),
       filename: 'multi-colored.png',
       content_type: 'application/xlsx'
     )

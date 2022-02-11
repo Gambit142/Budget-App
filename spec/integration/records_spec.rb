@@ -12,7 +12,7 @@ RSpec.describe 'Records Index Page Features', type: :feature do
 
     @games = @vladmir.categories.new(name: 'games')
     @games.icon.attach(
-      io: File.open(Rails.root.join('spec', 'fixtures', 'multi-colored.png')), 
+      io: File.open(Rails.root.join('spec', 'fixtures', 'multi-colored.png')),
       filename: 'multi-colored.png',
       content_type: 'application/png'
     )
@@ -47,8 +47,8 @@ RSpec.describe 'Records Index Page Features', type: :feature do
 
     it 'completes the creation of a new record' do
       click_button('Add New Transaction')
-      fill_in "Name", with: 'PlayStation 5'
-      fill_in "Amount", with: 110.6
+      fill_in 'Name', with: 'PlayStation 5'
+      fill_in 'Amount', with: 110.6
       find(:css, "#add_record_category_ids_#{@games.id}").set(true)
       click_button('Create Transaction')
       expect(page).to have_current_path(category_records_path(@games))

@@ -18,15 +18,11 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
     font-family: $roboto;
     margin-top: 1.5rem;
     margin-left: 1rem;
- 
+
     .checkbox-main-label {
       font-size: 1.2rem;
       line-height: 1.1rem;
       font-weight: $bold;
-    }
-
-    .checkbox-div:first-of-type {
-      margin-top: 0.7rem;
     }
 
     .checkbox-div {
@@ -40,8 +36,7 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
         font-weight: bold;
         margin-top: 0.2rem;
       }
-      
-      
+
       input[type="checkbox"] {
         -webkit-appearance: none;
         appearance: none;
@@ -58,7 +53,7 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
         display: grid;
         place-content: center;
       }
-  
+
       input[type="checkbox"]::before {
         content: "";
         width: 0.65em;
@@ -70,17 +65,20 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
         transform-origin: bottom left;
         clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
       }
-  
+
       input[type="checkbox"]:checked::before {
         transform: scale(1);
       }
 
       input[type="checkbox"]:focus {
-        outline: max(0.125em, 0.15em) solid currentColor;
-        outline-offset: max(0.125em, 0.15em);
+        outline: 0.15em solid currentColor;
+        outline-offset: 0.15em;
       }
     }
 
+    .checkbox-div:first-of-type {
+      margin-top: 0.7rem;
+    }
   }
 }
 
@@ -99,7 +97,7 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
       gap: 0.5rem;
       margin-top: 0.4rem;
     }
-  
+
     .payment-div {
       margin-top: 0.7rem;
       font-size: 2rem;
@@ -118,13 +116,13 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
       font-size: 0.8rem;
       font-weight: bold;
     }
-    
+
     .transaction-info {
       font-family: $italianno;
       font-size: 1.5rem;
       font-weight: $bold;
     }
-    
+
     .date {
       font-size: 0.8rem;
       margin-bottom: 0.9rem;

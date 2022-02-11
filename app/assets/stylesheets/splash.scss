@@ -14,8 +14,10 @@ $blue: #3778c2;
   font-family: $italiana;
   justify-content: center;
   font-size: 1.1rem;
-  
-  .alert, .success, .notice {
+
+  .alert,
+  .success,
+  .notice {
     margin: 1rem 0;
     background-color: #1a4f8b;
     color: #fff;
@@ -49,7 +51,7 @@ $blue: #3778c2;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    border: none
+    border: none;
   }
 
   .devise-btn:hover {

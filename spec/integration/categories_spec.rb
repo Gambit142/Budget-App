@@ -12,7 +12,7 @@ RSpec.describe 'Categories Index Page Features', type: :feature do
 
     @games = @vladmir.categories.new(name: 'games')
     @games.icon.attach(
-      io: File.open(Rails.root.join('spec', 'fixtures', 'multi-colored.png')), 
+      io: File.open(Rails.root.join('spec', 'fixtures', 'multi-colored.png')),
       filename: 'multi-colored.png',
       content_type: 'application/png'
     )
@@ -41,8 +41,8 @@ RSpec.describe 'Categories Index Page Features', type: :feature do
 
     it 'completes the creation of a new category' do
       click_button('Add New Category')
-      fill_in "Name", with: 'Sports'
-      find(:css, '#add_category_icon').set(File.join(Rails.root + 'spec', 'fixtures', 'multi-colored.png'))
+      fill_in 'Name', with: 'Sports'
+      find(:css, '#add_category_icon').set(File.join(Rails.root.to_s, 'spec', 'fixtures', 'multi-colored.png'))
       click_button('Register Category')
       expect(page).to have_current_path(categories_url)
       expect(page).to have_content 'sports'

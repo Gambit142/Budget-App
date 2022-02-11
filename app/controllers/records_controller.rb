@@ -20,10 +20,10 @@ class RecordsController < ApplicationController
       category_ids.each do |id|
         @record.categories_records.create!(category_id: id.to_i)
       end
-      flash[:success] = "You completed this transaction successfully"
+      flash[:success] = 'You completed this transaction successfully'
       redirect_to category_records_path(category)
     else
-      flash.now[:error] = "New transaction could not be created."
+      flash.now[:error] = 'New transaction could not be created.'
       render :new
     end
   end
@@ -33,7 +33,6 @@ class RecordsController < ApplicationController
   end
 
   def record_params
-    params.require(:add_record).permit(:name, :amount, category_ids:[])
+    params.require(:add_record).permit(:name, :amount, category_ids: [])
   end
 end
-
