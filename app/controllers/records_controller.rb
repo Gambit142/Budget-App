@@ -32,6 +32,8 @@ class RecordsController < ApplicationController
     @category = current_user.categories.includes(:records).find(params[:category_id])
   end
 
+  private
+
   def record_params
     params.require(:add_record).permit(:name, :amount, category_ids: [])
   end

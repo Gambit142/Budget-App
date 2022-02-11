@@ -14,7 +14,8 @@
  *= require_self
  */
 
-* {
+/*
+ * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,8 +28,6 @@
 
 body {
   background-color: rgb(235, 238, 238);
-  font-family: 'Proxima-Nova', sans-serif;
-  color: #434b54;
 }
 
 .d-flex {
@@ -48,6 +47,7 @@ body {
 }
 
 .nav-bar-container {
+  font-family: 'Italiana', serif;
   font-size: 1.2rem;
   font-weight: bold;
   justify-content: space-between;
@@ -67,6 +67,7 @@ body {
   width: 100%;
   padding: 1rem;
   font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
   outline: none;
 }
 
@@ -79,6 +80,7 @@ body {
   width: 20rem;
   text-align: center;
   padding: 1rem;
+  font-family: 'Italiana', serif;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -109,4 +111,4 @@ body {
   font-style: italic;
   margin-top: 0.4rem;
   margin-left: 0.4rem;
-}
+} */

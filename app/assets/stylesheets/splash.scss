@@ -5,13 +5,11 @@
   text-decoration: none;
 }
 
-$italianno: 'Italianno', cursive;
-$italiana: 'Italiana', serif;
-$roboto: 'Roboto', sans-serif;
 $blue: #3778c2;
+$grey: #434b54;
+$proxima: 'Proxima-Nova', sans-serif;
 
 .flash-container {
-  font-family: $italiana;
   justify-content: center;
   font-size: 1.1rem;
 
@@ -32,14 +30,14 @@ $blue: #3778c2;
   .splash-header {
     padding: 0 2rem;
     padding-top: 2.5rem;
-    font-family: $italiana;
     font-size: 1.4rem;
   }
 
   .app-name {
-    margin: 12rem 4rem 10rem 4rem;
-    font-family: $italianno;
-    font-size: 3rem;
+    margin: 12rem 2rem 10rem 2rem;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
   }
 
   .devise-btn {
@@ -47,11 +45,12 @@ $blue: #3778c2;
     width: 20rem;
     text-align: center;
     padding: 1rem;
-    font-family: $italiana;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     border: none;
+    font-family: $proxima;
+    color: #434b54;
   }
 
   .devise-btn:hover {
