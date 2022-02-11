@@ -24,7 +24,7 @@ RSpec.describe Record, type: :request do
 
   describe 'GET #new page' do
     it 'tests the URL path for records#new' do
-      get new_record_url
+      get new_category_record_url(@category)
       expect(response).to have_http_status(200)
       expect(response).to render_template(:new)
       expect(response.body).to include('Create Your Transaction')

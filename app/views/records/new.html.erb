@@ -1,9 +1,9 @@
 <main>
   <div>
-    <%= render partial: "shared/navbar", locals: { variable: 'NEW TRANSACTION' } %>
+    <%= render partial: "shared/navbar", locals: { variable: 'NEW TRANSACTION', path: category_records_path(@category) } %>
   </div>
   <h1>Create Your Transaction</h1>
-    <%= form_with url: create_record_path, method: :post, local: true, scope: :add_record do |form| %>
+    <%= form_with url:  category_records_path(@category), method: :post, local: true, scope: :add_record do |form| %>
 
       <div>
         <%= form.label :name %><br>

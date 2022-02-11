@@ -41,7 +41,7 @@ RSpec.describe 'Records Index Page Features', type: :feature do
 
     it 'should direct me to a page for creating new record' do
       click_button('Add New Transaction')
-      expect(page).to have_current_path(new_record_url)
+      expect(page).to have_current_path(new_category_record_url(@games))
       expect(page).to have_content 'Create Your Transaction'
     end
 
