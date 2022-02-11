@@ -22,9 +22,11 @@
     <script>
       const FILEUPLOADER = document.querySelector('#add_category_icon');
       FILEUPLOADER.addEventListener("change", (e) => {
+        document.querySelector('.file-upload-label > span').style.display = 'block';
         document.querySelector('.file-upload-label > span').innerText = e.target.files[0].name;
-        document.querySelector('.file-upload-label > p').style.backgroundColor = "green";
-        document.querySelector('.file-upload-label > p').innerText = "Selected ✓"
+        document.querySelector('.file-upload-label > span').style.color = '#5fb523';
+        document.querySelector('.file-upload-label > p').style.backgroundColor = "#5fb523";
+        document.querySelector('.file-upload-label > p').innerText = "Uploaded ✓"
       })
 
       document.querySelector('.reg-cat').addEventListener('click', () => {

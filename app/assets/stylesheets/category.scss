@@ -11,6 +11,27 @@ $blue: #3778c2;
 $bold: bold;
 $grey: #434b54;
 
+.add-new-btn-div {
+  background-color: #5fb523;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  button, input {
+    border: 1px solid white;
+    background: transparent;
+    width: 20rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: $italiana;
+  }
+}
+
 .category-container {
   color: $grey;
   padding-bottom: 10rem;
@@ -73,24 +94,53 @@ $grey: #434b54;
     }
   }
 
-  .add-new-btn-div {
-    background-color: #5fb523;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  // .add-new-btn-div {
+  //   background-color: #5fb523;
+  //   display: flex;
+  //   justify-content: center;
+  //   position: fixed;
+  //   bottom: 0;
+  //   right: 0;
+  //   left: 0;
 
-    button {
-      border: 1px solid white;
-      background: transparent;
-      width: 20rem;
-      padding: 1.5rem;
-      margin: 1.5rem;
-      font-size: 1.2rem;
-      color: #fff;
-      font-family: $italiana;
-    }
+  //   button {
+  //     border: 1px solid white;
+  //     background: transparent;
+  //     width: 20rem;
+  //     padding: 1.5rem;
+  //     margin: 1.5rem;
+  //     font-size: 1.2rem;
+  //     color: #fff;
+  //     font-family: $italiana;
+  //   }
+  // }
+}
+
+.new-category-container {
+  color: $grey;
+
+  .register-header {
+    font-family: Italianno, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3.5rem 0;
+  }
+
+  .upload-icon {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1a4f8b;
+    color: #fff;
+    font-family: Italiana, sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .file-name {
+    display: none;
+    font-size: 1rem;
+  }
+
+  .file-field {
+    display: none;
   }
 }
