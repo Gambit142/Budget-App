@@ -6,11 +6,20 @@
 ## Screenshot
 > |Categories Page| Records Page   |
 > |---------------|----------------|
-> |![screenshot](./app/assets/images/Categories.png)|![screenshot2](./app/assets/images/Records.png)|!
+> |![screenshot](./app/assets/images/Categories.png)|![screenshot2](./app/assets/images/Records.png)|
 
 ## Brief Demo
 
 > ![screenshot](./app/assets/images/budget-app.gif)
+
+## ERD Diagram for Models
+
+> |ERD DIAGRAM|
+> |-----------|
+> |![ERD](./app/assets/images/ERD-Diagram.png)|
+
+## Project Requirements
+- Click [HERE](https://github.com/microverseinc/curriculum-rails/blob/main/capstone/rails_capstone.md) for details of project requirements 
 
 
 ## Built With
