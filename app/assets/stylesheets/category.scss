@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 $italianno: 'Italianno', cursive;
 $italiana: 'Italiana', serif;
 $roboto: 'Roboto', sans-serif;
@@ -93,38 +87,18 @@ $grey: #434b54;
       }
     }
   }
+}
 
-  // .add-new-btn-div {
-  //   background-color: #5fb523;
-  //   display: flex;
-  //   justify-content: center;
-  //   position: fixed;
-  //   bottom: 0;
-  //   right: 0;
-  //   left: 0;
-
-  //   button {
-  //     border: 1px solid white;
-  //     background: transparent;
-  //     width: 20rem;
-  //     padding: 1.5rem;
-  //     margin: 1.5rem;
-  //     font-size: 1.2rem;
-  //     color: #fff;
-  //     font-family: $italiana;
-  //   }
-  // }
+.register-header {
+  font-family: Italianno, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 3.5rem 0;
 }
 
 .new-category-container {
   color: $grey;
 
-  .register-header {
-    font-family: Italianno, sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 3.5rem 0;
-  }
 
   .upload-icon {
     text-align: center;
