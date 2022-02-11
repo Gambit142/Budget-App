@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 $italianno: 'Italianno', cursive;
@@ -10,12 +11,12 @@ $roboto: 'Roboto', sans-serif;
 $blue: #3778c2;
 
 .flash-container {
-  margin: 1rem 0;
   font-family: $italiana;
   justify-content: center;
   font-size: 1.1rem;
-
+  
   .alert, .success, .notice {
+    margin: 1rem 0;
     background-color: #1e234c;
     color: #fff;
     text-align: center;
