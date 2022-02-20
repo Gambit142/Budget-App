@@ -1,3 +1,6 @@
+$italianno: 'Italianno', cursive;
+$italiana: 'Italiana', serif;
+$roboto: 'Roboto', sans-serif;
 $blue: #3778c2;
 $bold: bold;
 $grey: #434b54;
@@ -12,6 +15,7 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
   }
 
   .general-checkbox-div {
+    font-family: $roboto;
     margin-top: 1.5rem;
     margin-left: 1rem;
 
@@ -81,6 +85,7 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
 .records-container {
   margin: 0.7rem;
   color: $grey;
+  font-family: $roboto;
   padding-bottom: 8rem;
 
   .upper-level {
@@ -96,6 +101,7 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
     .payment-div {
       margin-top: 0.7rem;
       font-size: 2rem;
+      font-family: $italianno;
       border-top: 2px solid $grey;
       border-bottom: 2px solid $grey;
     }
@@ -112,6 +118,7 @@ $shadow: 0 1px 4px 6px rgba(16, 33, 100, 0.1);
     }
 
     .transaction-info {
+      font-family: $italianno;
       font-size: 1.5rem;
       font-weight: $bold;
     }
