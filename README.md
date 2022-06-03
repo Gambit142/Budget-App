@@ -63,7 +63,7 @@ to test simply run `rspec spec`
 ## Authors
 👤 **Francis Ugorji**
 
-- GitHub: [@Gambit142](https://github.com/MrBrN197)
+- GitHub: [@Gambit142](https://github.com/Gambit142)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/francis-ugorji/)
 
 
